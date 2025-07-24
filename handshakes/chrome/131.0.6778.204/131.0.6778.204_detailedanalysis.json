@@ -1,0 +1,119 @@
+{
+  "packet_info": {
+    "packet_length": "2120",
+    "timestamp_info": {
+      "time_since_first_frame": "0.000472701 seconds",
+      "time_since_previous_frame": "0.000447001 seconds",
+      "irtt": "0.000025700 seconds"
+    },
+    "tcp_analysis": {
+      "bytes_in_flight": "2054",
+      "bytes_sent_since_psh": "2054",
+      "conversation_completeness": "Incomplete, ESTABLISHED (7)"
+    }
+  },
+  "ethernet_layer": {
+    "destination": "00:00:00:00:00:00",
+    "source": "00:00:00:00:00:00",
+    "type": "IPv4 (0x0800)",
+    "lg_bit": "Globally unique address (factory default)",
+    "ig_bit": "Individual address (unicast)"
+  },
+  "ip_layer": {
+    "version": "4",
+    "header_length": "20 bytes (5)",
+    "dscp": "CS0",
+    "ecn": "Not-ECT",
+    "total_length": "2106",
+    "identification": "0xbbd3 (48083)",
+    "flags": "0x40, Don't fragment",
+    "fragment_offset": "0",
+    "ttl": "64",
+    "protocol": "TCP (6)",
+    "header_checksum": "0x78e8",
+    "source_address": "127.0.0.1",
+    "destination_address": "127.0.0.1"
+  },
+  "tcp_layer": {
+    "source_port": "52186",
+    "destination_port": "8443",
+    "stream_index": "25",
+    "tcp_segment_len": "2054",
+    "sequence_number": "1    (relative sequence number)",
+    "acknowledgment_number": "1    (relative ack number)",
+    "header_length": "20 bytes (5)",
+    "flags": "·······AP···",
+    "window": "512",
+    "checksum": "0x78e8 [validation disabled]",
+    "urgent_pointer": "0",
+    "options": "(12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps"
+  },
+  "tls_layer": {
+    "content_type": "Handshake (22)",
+    "version": "TLS 1.0",
+    "length": "2120",
+    "handshake_type": "Client Hello (1)",
+    "handshake_length": "2120",
+    "client_version": "1.0",
+    "random": "cdb6b63ed4d44f6be9e8844e4b00d014afa268a0ea2df711a226b49fad62fb2e",
+    "session_id": "ec7ef50d71d84bf3099697a88bf1c403e0d8c1dfd0fed2277d15fb0504863ebd",
+    "cipher_suites": [
+      "Reserved (GREASE) (0x7a7a)",
+      "TLS_AES_128_GCM_SHA256 (0x1301)",
+      "TLS_AES_256_GCM_SHA384 (0x1302)",
+      "TLS_CHACHA20_POLY1305_SHA256 (0x1303)",
+      "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xc02b)",
+      "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)",
+      "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xc02c)",
+      "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)",
+      "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca9)",
+      "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xcca8)",
+      "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xc013)",
+      "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)",
+      "TLS_RSA_WITH_AES_128_GCM_SHA256 (0x009c)",
+      "TLS_RSA_WITH_AES_256_GCM_SHA384 (0x009d)",
+      "TLS_RSA_WITH_AES_128_CBC_SHA (0x002f)",
+      "TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)"
+    ],
+    "compression_methods": [
+      "null (0)"
+    ],
+    "extensions": {
+      "server_name": "localhost",
+      "supported_groups": [
+        "Reserved (GREASE) (0xeaea)",
+        "Unknown (0x11ec)",
+        "x25519 (0x001d)",
+        "secp256r1 (0x0017)",
+        "secp384r1 (0x0018)"
+      ],
+      "signature_algorithms": [
+        "ecdsa_secp256r1_sha256 (0x0403)",
+        "rsa_pss_rsae_sha256 (0x0804)",
+        "rsa_pkcs1_sha256 (0x0401)",
+        "ecdsa_secp384r1_sha384 (0x0503)",
+        "rsa_pss_rsae_sha384 (0x0805)",
+        "rsa_pkcs1_sha384 (0x0501)",
+        "rsa_pss_rsae_sha512 (0x0806)",
+        "rsa_pkcs1_sha512 (0x0601)"
+      ],
+      "alpn_protocols": [
+        "h2",
+        "http/1.1"
+      ],
+      "supported_versions": [
+        "Reserved (GREASE) (0x1a1a)",
+        "TLS 1.3 (0x0304)",
+        "TLS 1.2 (0x0303)"
+      ]
+    },
+    "ja3_fullstring": "771,31354-4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,27242-18-11-65281-35-13-23-27-45-5-17613-0-10-51-43-65037-16-64250-41,60138-4588-29-23-24,0",
+    "ja3_hash": "6a27710fdbe72fa139c65c602dc5db07"
+  },
+  "metadata": {
+    "captured_at": "2025-07-25T02:06:39.106889",
+    "browser": "chrome",
+    "version": "131.0.6778.204",
+    "parser_version": "1.0"
+  }
+}
